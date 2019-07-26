@@ -1,0 +1,139 @@
+<!--pages/main/main.wxml-->
+<!--index.wxml-->
+<cu-custom bgColor="bg-red" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">首页</view></cu-custom>
+<view class="swiper">
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+</view>
+<!-- 列表 -->
+<view class="list">
+ <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+    <view class="cu-item" wx:for="{{iconList}}" wx:key >
+      <!-- <view class="cuIcon-{{item.icon}} text-{{item.color}}">
+        
+      </view> -->
+      <image src="{{item.url}}" class="img"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  </view>
+  <view class="line"></view>
+  <!-- 滚动 -->
+      <image src="../img/通知.png " class="tzimg "></image>
+      <swiper class="swiper_container margin-left-xl margin-tb-xs " vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{msgList}}" wx:key="">
+        <!-- <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate"> -->
+          <swiper-item>
+            <view class="swiper_item">{{item.title}}</view>
+          </swiper-item>
+        <!-- </navigator> -->
+      </block>
+    </swiper>
+    <view class="line"></view>
+    <view class="bj margin-tb-xs">
+    <image src="../img/g1.png" class="ksimg "></image>
+    <view class="text-lg margin-top-xs">便捷入口</view>
+    </view>
+    <view class="box solid">
+      <view class="box1  ">
+      <view class="text-lg margin-top margin-left">组织会议</view>
+      <view class="text-sm text-gray margin-left">意见反馈第一步</view>
+      <image src="../img/z1.png" class="bjimg"></image>
+      </view>
+      <view class="box1 solid">
+       <view class="text-lg margin-top margin-left">民主评议</view>
+       <view class="text-sm text-gray margin-left">公平公开评议</view>
+        <image src="../img/m1.png" class="bjimg"></image>
+       </view>
+      <view class="box1 solid">
+       <view class="text-lg margin-top margin-left">三会一课</view>
+       <view class="text-sm text-gray margin-left">落实党的实践</view>
+        <image src="../img/s1.png" class="bjimg"></image>
+      </view>
+      <view class="box1 ">
+       <view class="text-lg margin-top margin-left">主题党日</view>
+       <view class="text-sm text-gray margin-left">开展党内活动</view>
+        <image src="../img/zt1.png" class="bjimg"></image>
+      </view>
+      
+    </view>
+    <!-- 每日精选 -->
+<view class="jxBox">
+ <image src="../img/xx1.png" class="jximg  margin-left "></image>
+ <view class="text-lg  margin-top-sm">每日精选</view>
+ 
+ <view wx:for="{{2}}" wx:key class="cu-card article  ">
+  <view class="cu-item shadow ">
+    <view class="title">
+      <view class="text-cut">成大学子到社区传递爱心</view>
+    </view>
+    <view class="content">
+      <image src="../img/志愿者服务.jpeg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">志愿者</view>
+          <view class="cu-tag bg-green light sm round">爱心</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+</view>
+<!-- 党建活动 -->
+<view class="djBox">
+   <image src="../img/dj1.png" class="jximg  margin-left "></image>
+ <view class="text-lg  margin-tb-sm">党建活动</view>
+<view wx:for="{{2}}" wx:key class="cu-card case margin-bottom" style="background-color:whitesmoke">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="../img/志愿者服务.jpeg" mode="widthFix"></image>
+      <view class="cu-tag bg-blue"></view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">成大学子做志愿者，在党的引领下，学会把爱心传递到每一位人民群众。</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(../img/志愿者服务.jpeg);"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">正义天使 凯尔</view>
+          <view class="text-gray text-sm flex justify-between">
+            十天前
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+</view>
+<!--  -->
+   <text class='pf-type'>附件上传（仅支持图片）</text>
+    <view class="question-images clearFloat">
+      <block wx:for="{{images}}" wx:key="*this">
+        <view class="q-image-wrap">
+          <!-- 图片缩略图  -->
+          <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+          <!-- 移除图片的按钮  -->
+          <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">
+            <icon class='iconfont icon-guanbi'></icon>
+          </view>
+        </view>
+      </block>
+      <view class='uploadImgBtn' bindtap="chooseImage" wx:if="{{images.length < 3}}">
+     
+        <text class='cuIcon-add icon-jiahao'></text>
+      </view>
+    </view>

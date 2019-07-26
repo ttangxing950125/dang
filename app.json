@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/study/study",
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs",
+   
+    "pages/work/work",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+   "color": "#666666",
+    "selectedColor": "#f00",
+    
+    "list": [
+      {
+        "selectedIconPath": "pages/img/民政信息-困难党员.png",
+        "iconPath": "pages/img/民政信息-困难党员 (1).png",
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/img/党建活动 (1).png",
+        "iconPath": "pages/img/党建活动.png",
+        "pagePath": "pages/study/study",
+        "text": "学习"
+      },
+      {
+        "selectedIconPath": "pages/img/党建信息 (1).png",
+        "iconPath": "pages/img/党建信息.png",
+        "pagePath": "pages/work/work",
+        "text": "工作"
+      },
+      {
+        "selectedIconPath": "pages/img/我的 (1).png",
+        "iconPath": "pages/img/我的.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
