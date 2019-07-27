@@ -52,7 +52,7 @@
       <view class="box1 solid">
        <view class="text-lg margin-top margin-left">三会一课</view>
        <view class="text-sm text-gray margin-left">落实党的实践</view>
-        <image src=".http://bbs.idateal.com/img/s1.png" class="bjimg"></image>
+        <image src="http://bbs.idateal.com/img/s1.png" class="bjimg"></image>
       </view>
       <view class="box1 ">
        <view class="text-lg margin-top margin-left">主题党日</view>
@@ -87,12 +87,12 @@
 </view>
 <!-- 党建活动 -->
 <view class="djBox">
-   <image src="../img/dj1.png" class="jximg  margin-left "></image>
+   <image src="http://bbs.idateal.com/img/dj1.png" class="jximg  margin-left "></image>
  <view class="text-lg  margin-tb-sm">党建活动</view>
 <view wx:for="{{2}}" wx:key class="cu-card case margin-bottom" style="background-color:whitesmoke">
   <view class="cu-item shadow">
     <view class="image">
-      <image src="../img/志愿者服务.jpeg" mode="widthFix"></image>
+      <image src="http://bbs.idateal.com/img/志愿者服务.jpeg" mode="widthFix"></image>
       <view class="cu-tag bg-blue"></view>
       <view class="cu-bar bg-shadeBottom">
         <text class="text-cut">成大学子做志愿者，在党的引领下，学会把爱心传递到每一位人民群众。</text>
@@ -100,7 +100,7 @@
     </view>
     <view class="cu-list menu-avatar">
       <view class="cu-item">
-        <view class="cu-avatar round lg" style="background-image:url(../img/志愿者服务.jpeg);"></view>
+        <view class="cu-avatar round lg" style="background-image:url(http://bbs.idateal.com/img/志愿者服务.jpeg);"></view>
         <view class="content flex-sub">
           <view class="text-grey">正义天使 凯尔</view>
           <view class="text-gray text-sm flex justify-between">

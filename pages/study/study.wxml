@@ -17,6 +17,50 @@
 </view>
 <!-- 资讯 -->
 <view class="zxbox">
-
+ <view wx:for="{{2}}" wx:key class="cu-card article  ">
+  <view class="cu-item shadow ">
+    <view class="title">
+      <view class="text-cut">成大学子到社区传递爱心</view>
+    </view>
+    <view class="content">
+      <image src="http://bbs.idateal.com/img/志愿者服务.jpeg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">志愿者</view>
+          <view class="cu-tag bg-green light sm round">爱心</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
 
 </view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-titles text-red"></text> 主题党日
+  </view>
+</view>
+
+<view class="zxbox">
+ <view wx:for="{{2}}" wx:key class="cu-card article solid-bottom ">
+  <view class="cu-item shadow ">
+    <view class="title">
+      <view class="text-cut">成大学子到社区传递爱心</view>
+    </view>
+    <view class="content">
+      <image src="http://bbs.idateal.com/img/志愿者服务.jpeg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">志愿者</view>
+          <view class="cu-tag bg-green light sm round">爱心</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+</view>
+
