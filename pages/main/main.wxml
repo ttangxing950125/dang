@@ -23,7 +23,7 @@
   </view>
   <view class="line"></view>
   <!-- 滚动 -->
-      <image src="../img/通知.png " class="tzimg "></image>
+      <image src="http://bbs.idateal.com/img/通知.png " class="tzimg "></image>
       <swiper class="swiper_container margin-left-xl margin-tb-xs " vertical="true" autoplay="true" circular="true" interval="2000">
       <block wx:for="{{msgList}}" wx:key="">
         <!-- <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate"> -->
@@ -35,35 +35,35 @@
     </swiper>
     <view class="line"></view>
     <view class="bj margin-tb-xs">
-    <image src="../img/g1.png" class="ksimg "></image>
+    <image src="http://bbs.idateal.com/img/g1.png" class="ksimg "></image>
     <view class="text-lg margin-top-xs">便捷入口</view>
     </view>
     <view class="box solid">
       <view class="box1  ">
       <view class="text-lg margin-top margin-left">组织会议</view>
       <view class="text-sm text-gray margin-left">意见反馈第一步</view>
-      <image src="../img/z1.png" class="bjimg"></image>
+      <image src="http://bbs.idateal.com/img/z1.png" class="bjimg"></image>
       </view>
       <view class="box1 solid">
        <view class="text-lg margin-top margin-left">民主评议</view>
        <view class="text-sm text-gray margin-left">公平公开评议</view>
-        <image src="../img/m1.png" class="bjimg"></image>
+        <image src="http://bbs.idateal.com/img/m1.png" class="bjimg"></image>
        </view>
       <view class="box1 solid">
        <view class="text-lg margin-top margin-left">三会一课</view>
        <view class="text-sm text-gray margin-left">落实党的实践</view>
-        <image src="../img/s1.png" class="bjimg"></image>
+        <image src=".http://bbs.idateal.com/img/s1.png" class="bjimg"></image>
       </view>
       <view class="box1 ">
        <view class="text-lg margin-top margin-left">主题党日</view>
        <view class="text-sm text-gray margin-left">开展党内活动</view>
-        <image src="../img/zt1.png" class="bjimg"></image>
+        <image src="http://bbs.idateal.com/img/zt1.png" class="bjimg"></image>
       </view>
       
     </view>
     <!-- 每日精选 -->
 <view class="jxBox">
- <image src="../img/xx1.png" class="jximg  margin-left "></image>
+ <image src="http://bbs.idateal.com/img/xx1.png" class="jximg  margin-left "></image>
  <view class="text-lg  margin-top-sm">每日精选</view>
  
  <view wx:for="{{2}}" wx:key class="cu-card article  ">
@@ -72,7 +72,7 @@
       <view class="text-cut">成大学子到社区传递爱心</view>
     </view>
     <view class="content">
-      <image src="../img/志愿者服务.jpeg" mode="aspectFill"></image>
+      <image src="http://bbs.idateal.com/img/志愿者服务.jpeg" mode="aspectFill"></image>
       <view class="desc">
         <view class="text-content">成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心成大学子到社区传递爱心 </view>
         <view>
